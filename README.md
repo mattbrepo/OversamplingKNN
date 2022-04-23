@@ -20,7 +20,7 @@ Understandably, the KNN model trained on such data (with k = 3) wrongly classifi
 
 Here is the confusion matrix:
 
-            | Prediction A | Prediction B
+ Ref / Pred | Prediction A | Prediction B
 ------------|--------------|--------------
 Reference A |      12      |      0
 Reference B |       2      |      2
