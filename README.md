@@ -14,13 +14,13 @@ I created an unbalanced data frame with 16 points associated with two classes:
 
 ![Example](/images/plot1.jpg)
 
-Understandably, the KNN model trained on such data (with k = 3) classifies the two points (class B, cross symbol) that are on the left side of the following image:
+Understandably, the KNN model trained on such data (with k = 3) wrongly classifies the two points (class B, cross symbol) that are on the left side of the following image:
 
 ![Example](/images/plot2.jpg)
 
 Here is the confusion matrix:
 
-Reference   | Prediction A | Prediction B
+            | Prediction A | Prediction B
 ------------|--------------|--------------
 Reference A |      12      |      0
 Reference B |       2      |      2
@@ -29,4 +29,4 @@ I applied random oversampling and retrained the KNN model:
 
 ![Example](/images/plot3.jpg)
 
-The oversampling did improve the prediction of the underrepresented class (class B, cross symbol), but had a negative effect on the prediction of the class A points. This is understood, since the creation of random class B points affects the prediction of those class A points that are close to such class B points.
+The oversampling did improve the prediction of the underrepresented class (class B, cross symbol), but it had a negative effect on the prediction of the class A points. This is understandable, since the creation of random class B points affects the prediction of those class A points that are close to such class B points.
