@@ -9,9 +9,9 @@ library(data.table)
 # create data with one item clearly in the wrong place
 countA = 12
 countB = 4
-countBWorng = 2
-df <- data.frame (X1 = c(rnorm(countA + countBWorng, mean=1, sd=0.1), rnorm(countB - countBWorng, mean=2, sd=0.1)),
-                  X2 = c(rnorm(countA + countBWorng, mean=1, sd=0.1), rnorm(countB - countBWorng, mean=2, sd=0.1)),
+countBWrong = 2
+df <- data.frame (X1 = c(rnorm(countA + countBWrong, mean=1, sd=0.1), rnorm(countB - countBWrong, mean=2, sd=0.1)),
+                  X2 = c(rnorm(countA + countBWrong, mean=1, sd=0.1), rnorm(countB - countBWrong, mean=2, sd=0.1)),
                   Label = c(rep("A", countA), rep("B", countB))
 )
 df$LabelInt = 1
